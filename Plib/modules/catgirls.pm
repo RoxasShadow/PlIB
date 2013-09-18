@@ -114,7 +114,7 @@ sub loadCatgirls{
 			    or $title =~ /pixiv/i
 			    ) {
 				@cat = (getLinkOnly($post->description()), $post->guid);
-				push(@posts, $cat);
+				push(@posts, @cat);
 			}
 		}
 	}
